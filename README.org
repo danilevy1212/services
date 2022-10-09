@@ -4,3 +4,4 @@ Collection docker compose files constituting the services I currently self-host.
 
 - [[file:jellyfin/][Jellyfin]] :: Comfy, private and self-hosted media server.
 - [[file:qbittorrent/][qbittorrent]] :: Always online, remote torrent manager.
+- [[file:syncthing/][syncthing]] :: Decentralized p2p file sharing.
