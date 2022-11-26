@@ -18,6 +18,8 @@ services:
       - /media/ntfs-volume-1/movies:/data/movies
       - /media/ntfs-volume-1/music:/data/music
       - /media/ntfs-volume-1/web-media:/data/web-media
+      - /dev/shm:/config/data/transcoding-temp/transcodes
+      - /opt/vc/lib:/opt/vc/lib
     ports:
       - 8096:8096
       - 8920:8920
