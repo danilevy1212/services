@@ -7,3 +7,13 @@ A collection docker compose files constituting the services I currently self-hos
 - [[file:syncthing/][syncthing]] :: Decentralized p2p file sharing.
 - [[https://pyload.net/][pyload]] :: Free (as in freedom) direct link download manager.
 - [[https://pi-hole.net/][pi-hole]] :: Say no to ads and trackers, on the DNS level.
+
+* Upgrade
+
+To upgrade and rebuild all the images, run:
+
+#+begin_src shell
+./upgrade.sh
+#+end_src
+
+This script will run the ~upgrade.sh~ on each =service= folder, which is responsible for upgrading each container image.

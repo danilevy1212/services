@@ -1,11 +1,9 @@
 version: "3"
 services:
   jellyfin:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: linuxserver/jellyfin:latest
     container_name: jellyfin
-    mem_limit: 2048M
+    mem_limit: 1024M
     mem_reservation: 128M
     environment:
       - PUID=1000
