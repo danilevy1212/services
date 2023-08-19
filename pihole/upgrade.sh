@@ -6,5 +6,6 @@ cd "$BASEDIR"
 docker compose pull
 docker compose down
 docker compose up -d
+sleep 5
 
 cd --
