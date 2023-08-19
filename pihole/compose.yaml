@@ -7,6 +7,8 @@ services:
       - 53:53/tcp
       - 53:53/udp
       - 8642:80/tcp
+    dns:
+      - 127.0.0.1
     environment:
       TZ: America/New_York
       WEBPASSWORD: ${PIHOLE_WERBPASSWORD:?Missing web password}
