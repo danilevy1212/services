@@ -1,0 +1,17 @@
+version: "3"
+services:
+  caddy:
+    image: arm64v8/caddy:2.7.2-alpine
+    container_name: caddy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - $PWD/Caddyfile:/etc/caddy/Caddyfile
+      - /media/ntfs-volume-1/caddy/data:/data
+      - /media/ntfs-volume-1/caddy/config:/config
+    dns:
+      - 127.0.0.1
+    network_mode: "host"
