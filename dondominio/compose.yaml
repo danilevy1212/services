@@ -1,0 +1,12 @@
+version: "3"
+services:
+  dondominio_dns:
+    build:
+      context: ./
+      args:
+        - DONDOMINIO_USERNAME=${DONDOMINIO_USERNAME:?Missing username}
+        - DONDOMINIO_API_KEY=${DONDOMINIO_API_KEY:?Missing api key}
+        - DONDOMINIO_BASE_DOMAIN=${DONDOMINIO_BASE_DOMAIN:?Missing base domain}
+        - CRON_SCHEDULE=${CRON_SCHEDULE:-*/5 * * * *}
+      dockerfile: ./Dockerfile
+    restart: unless-stopped
