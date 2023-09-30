@@ -5,3 +5,9 @@ jellyfin.dlevym.me {
 torrent.dlevym.me {
     reverse_proxy localhost:8080
 }
+
+cv.dlevym.me {
+    root * /srv
+    encode gzip
+    file_server
+}
