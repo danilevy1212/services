@@ -12,7 +12,7 @@ USER 0
 RUN apt-get -y update
 RUN apt-get -y install cron wget
 
-COPY ./dondomcli.sh /etc/dondomcli.sh
+RUN wget -O /etc/dondomcli.sh https://raw.githubusercontent.com/dondominio/dondns-bash/master/dondominio/dondomcli.sh
 RUN chmod +x /etc/dondomcli.sh
 
 # Create conf file
