@@ -10,7 +10,7 @@ services:
       - WEBUI_PORT=8080
     volumes:
       - /root/qbittorent_config:/config
-      - /media/ntfs-volume-1/downloads:/downloads
+      - /media/ext1/downloads:/downloads
     ports:
       - 8080:8080
       - 6881:6881

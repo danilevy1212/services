@@ -11,13 +11,15 @@ services:
       - TZ=America/New_York
       - JELLYFIN_PublishedServerUrl=${JELLYFIN_SERVER_URL:?Missing server URL}
     volumes:
-      - /media/ntfs-volume-1/jellyfin_config:/config
-      - /media/ntfs-volume-1/series:/data/tvshows
-      - /media/ntfs-volume-1/movies:/data/movies
-      - /media/ntfs-volume-1/music:/data/music
-      - /media/ntfs-volume-1/web-media:/data/web-media
-      - /dev/shm:/config/data/transcoding-temp/transcodes
-      - /opt/vc/lib:/opt/vc/lib
+      - /media/ext1/jellyfin_config:/config
+      - /media/ext1/series:/data/tvshows
+      - /media/ext1/movies:/data/movies
+      - /media/ext1/music:/data/music
+      - /media/ext1/web-media:/data/web-media
+    devices:
+      - /dev/video10:/dev/video10
+      - /dev/video11:/dev/video11
+      - /dev/video12:/dev/video12
     ports:
       - 8096:8096
       - 8920:8920

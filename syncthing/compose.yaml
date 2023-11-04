@@ -9,8 +9,8 @@ services:
       - PGID=1000
       - TZ=America/New_York
     volumes:
-      - /media/ntfs-volume-1/syncthing_config:/config
-      - /media/ntfs-volume-1/Cloud:/Cloud
+      - /media/ext1/syncthing_config:/config
+      - /media/ext1/Cloud:/Cloud
     ports:
       - 8384:8384
       - 22000:22000/tcp

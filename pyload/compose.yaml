@@ -8,8 +8,8 @@ services:
       - PGID=1000
       - TZ=America/New_York
     volumes:
-      - /media/ntfs-volume-1/pyload_config:/config
-      - /media/ntfs-volume-1/downloads:/downloads
+      - /media/ext1/pyload_config:/config
+      - /media/ext1/downloads:/downloads
     ports:
       - 8000:8000
       - 9666:9666
