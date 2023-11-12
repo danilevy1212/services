@@ -11,3 +11,7 @@ cv.dlevym.me {
     encode gzip
     file_server
 }
+
+rss.dlevym.me {
+    reverse_proxy localhost:8112
+}
