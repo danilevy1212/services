@@ -15,10 +15,17 @@ services:
       - /media/ext1/movies:/data/movies
       - /media/ext1/music:/data/music
       - /media/ext1/web-media:/data/web-media
+      - /media/ext1/audiobooks:/data/audiobooks
+      - /media/ext1/photos:/data/photos
     devices:
       - /dev/video10:/dev/video10
       - /dev/video11:/dev/video11
       - /dev/video12:/dev/video12
+      - /dev/video13:/dev/video13
+      - /dev/video14:/dev/video14
+      - /dev/video15:/dev/video15
+      - /dev/video16:/dev/video16
+      - /dev/video18:/dev/video18
     ports:
       - 8096:8096
       - 8920:8920
