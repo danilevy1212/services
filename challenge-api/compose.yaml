@@ -1,0 +1,41 @@
+services:
+  server:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    restart: unless-stopped
+    environment:
+      - CHALLENGE_SERVER_PORT=${CHALLENGE_SERVER_PORT}
+      - CHALLENGE_SERVER_IS_PRODUCTION=${CHALLENGE_SERVER_IS_PRODUCTION}
+      - CHALLENGE_DATABASE_HOST=${CHALLENGE_DATABASE_HOST}
+      - CHALLENGE_DATABASE_NAME=${CHALLENGE_DATABASE_NAME}
+      - CHALLENGE_DATABASE_USERNAME=${CHALLENGE_DATABASE_USERNAME}
+      - CHALLENGE_DATABASE_PASSWORD=${CHALLENGE_DATABASE_PASSWORD}
+    ports:
+      - "3000:3000"
+    depends_on:
+      - database
+    networks:
+      - internal
+
+  database:
+    image: postgres:17.4-alpine
+    environment:
+      POSTGRES_USER: ${CHALLENGE_DATABASE_USERNAME}
+      POSTGRES_PASSWORD: ${CHALLENGE_DATABASE_PASSWORD}
+      POSTGRES_DB: ${CHALLENGE_DATABASE_NAME}
+    command: >
+      postgres
+      -c shared_buffers=128MB
+      -c work_mem=4MB
+      -c max_connections=10
+      -c logging_collector=off
+      -c log_min_messages=warning
+    volumes:
+      - ./database:/var/lib/postgresql/data
+    networks:
+      - internal
+
+networks:
+  internal:
+    driver: bridge
