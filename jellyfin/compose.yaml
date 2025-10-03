@@ -15,7 +15,6 @@ services:
       - /media/ext1/movies:/data/movies
       - /media/ext1/music:/data/music
       - /media/ext1/web-media:/data/web-media
-      - /media/ext1/audiobooks:/data/audiobooks
       - /media/ext1/photos:/data/photos
     devices:
       - /dev/video10:/dev/video10
