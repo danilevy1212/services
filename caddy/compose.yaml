@@ -1,10 +1,10 @@
 services:
   caddy:
-    image: arm64v8/caddy:2.7.2-alpine
+    image: arm64v8/caddy:latest
     container_name: caddy
     restart: unless-stopped
     volumes:
-      - $PWD/Caddyfile:/etc/caddy/Caddyfile
-      - /media/ntfs-volume-1/caddy/data:/data
-      - /media/ntfs-volume-1/caddy/config:/config
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - /media/ext1/caddy/data:/data
+      - /media/ext1/caddy/config:/config
     network_mode: "host"

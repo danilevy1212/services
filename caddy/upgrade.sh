@@ -3,8 +3,8 @@
 BASEDIR="$(dirname "$0")"
 cd "$BASEDIR"
 
-docker compose down
 docker compose pull
+docker compose down
 docker compose up -d
 
 cd --
