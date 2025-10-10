@@ -6,7 +6,6 @@ A collection docker compose files constituting the services I currently self-hos
 - **[qbittorrent](qbittorrent/)** - Always online, remote torrent manager.
 - **[syncthing](syncthing/)** - Decentralized p2p file sharing.
 - **[freshrss](https://freshrss.org/index.html)** - FreshRSS is a self-hosted RSS and Atom feed aggregator.
-- **[wegmans_clipper](https://github.com/danilevy1212/wegmans_clipper)** - Personal project for automating wegmans digital coupons clipping.
 - **[dondominio](https://github.com/dondominio/dondns-bash)** - Dynamic DNS for the Don Dominio DNS provider.
 - **[caddy](https://hub.docker.com/_/caddy)** - Reverse proxy service.
 - **[pi-hole](https://pi-hole.net/)** - Say no to ads and trackers, on the DNS level.
