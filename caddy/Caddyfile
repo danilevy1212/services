@@ -9,7 +9,3 @@ torrent.dlevym.me {
 rss.dlevym.me {
     reverse_proxy localhost:8112
 }
-
-challenge-api.dlevym.me {
-    reverse_proxy localhost:3000
-}
