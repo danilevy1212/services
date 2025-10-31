@@ -8,7 +8,7 @@ A collection docker compose files constituting the services I currently self-hos
 - **[freshrss](https://freshrss.org/index.html)** - FreshRSS is a self-hosted RSS and Atom feed aggregator.
 - **[dondominio](https://github.com/dondominio/dondns-bash)** - Dynamic DNS for the Don Dominio DNS provider.
 - **[caddy](https://hub.docker.com/_/caddy)** - Reverse proxy service.
-- **[pi-hole](https://pi-hole.net/)** - Say no to ads and trackers, on the DNS level.
+- ~~**[pi-hole](https://pi-hole.net/)** - Say no to ads and trackers, on the DNS level.~~ *Temporarily decommissioned*
 - **[pyload](https://pyload.net/)** - Free (as in freedom) direct link download manager.
 - **[MCPHUB](mcphub/)** - MCP server hub for managing multiple MCP servers.
 

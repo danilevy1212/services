@@ -12,6 +12,3 @@ services:
       REQUEST_TIMEOUT: 60000
       GITHUB_API_TOKEN: ${GITHUB_API_TOKEN?Missing Github API token for MCP server}
     restart: unless-stopped
-    dns:
-      - 8.8.8.8
-      - 1.1.1.1
