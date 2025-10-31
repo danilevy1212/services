@@ -6,5 +6,7 @@ services:
     ports:
       - "3001:8080"
     restart: unless-stopped
+    environment:
+      - HF_HUB_OFFLINE=1
 volumes:
   open-webui:
