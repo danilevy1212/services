@@ -11,6 +11,7 @@ A collection docker compose files constituting the services I currently self-hos
 - ~~**[pi-hole](https://pi-hole.net/)** - Say no to ads and trackers, on the DNS level.~~ *Temporarily decommissioned*
 - **[pyload](https://pyload.net/)** - Free (as in freedom) direct link download manager.
 - **[MCPHUB](mcphub/)** - MCP server hub for managing multiple MCP servers.
+- **[SearXNG](searnxg/)** - Privacy-respecting, hackable metasearch engine.
 
 ## Upgrade
 

@@ -1,0 +1,16 @@
+# see https://docs.searxng.org/admin/settings/settings.html#settings-use-default-settings
+use_default_settings: true
+server:
+  # base_url is defined in the SEARXNG_BASE_URL environment variable.
+  # secret_key is defined in the SEARXNG_SECRET environment variable.
+  limiter: false  # enable this when running the instance for a public usage on the internet
+  public_instance: false
+  image_proxy: true
+  # Enable connections from any IP
+  bind_address: "0.0.0.0"
+search:
+  formats:
+    - html
+    - json
+valkey:
+  url: valkey://valkey:6379/0
