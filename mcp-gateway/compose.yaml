@@ -1,0 +1,14 @@
+services:
+  gateway:
+    image: docker/mcp-gateway
+    ports:
+      - "3000:8080"
+    command:
+      - --port=8080
+      - --transport=http
+      # See https://hub.docker.com/mcp
+      - --servers=fetch
+      - --servers=sequentialthinking
+      - --servers=context7
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock

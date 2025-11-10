@@ -10,7 +10,7 @@ A collection docker compose files constituting the services I currently self-hos
 - **[caddy](https://hub.docker.com/_/caddy)** - Reverse proxy service.
 - ~~**[pi-hole](https://pi-hole.net/)** - Say no to ads and trackers, on the DNS level.~~ *Temporarily decommissioned*
 - **[pyload](https://pyload.net/)** - Free (as in freedom) direct link download manager.
-- **[MCPHUB](mcphub/)** - MCP server hub for managing multiple MCP servers.
+- **[MCP Gateway](mcp-gateway/)** - Docker MCP gateway for managing multiple MCP servers.
 - **[SearXNG](searnxg/)** - Privacy-respecting, hackable metasearch engine.
 
 ## Upgrade
